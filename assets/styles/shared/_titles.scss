@@ -1,0 +1,10 @@
+@import '../utils/theme';
+
+%title {
+  &-72 {
+    @include font-base(72, 72, 'NeueMontreal', 1.1);
+  }
+  &-84 {
+    @include font-base(84, 84, 'NeueMontreal', 1);
+  }
+}

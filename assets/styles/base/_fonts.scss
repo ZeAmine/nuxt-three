@@ -1,0 +1,56 @@
+//----------------
+/** Aktiv Grotesk */
+//----------------
+@font-face {
+  font-family: theme($fontFamilies, 'AktivGrotesk');
+  src: url('@/assets/fonts/AktivGroteskCorp-Bold.woff2') format('woff2'),
+    url('@/assets/fonts/AktivGroteskCorp-Bold.woff') format('woff');
+  font-weight: theme($fontWeights, 'bold');
+  font-style: normal;
+}
+@font-face {
+  font-family: theme($fontFamilies, 'AktivGrotesk');
+  src: url('@/assets/fonts/AktivGroteskCorp-Medium.woff2') format('woff2'),
+    url('@/assets/fonts/AktivGroteskCorp-Medium.woff') format('woff');
+  font-weight: theme($fontWeights, 'medium');
+  font-style: normal;
+}
+@font-face {
+  font-family: theme($fontFamilies, 'AustinCyr');
+  src: url('@/assets/fonts/AktivGroteskCorp-Regular.woff2') format('woff2'),
+    url('@/assets/fonts/AktivGroteskCorp-Regular.woff') format('woff');
+  font-weight: theme($fontWeights, 'regular');
+  font-style: normal;
+}
+
+//----------------
+/** Neue Montreal */
+//----------------
+@font-face {
+  font-family: theme($fontFamilies, 'NeueMontreal');
+  src: url('@/assets/fonts/NeueMontreal-Light.woff2') format('woff2'),
+    url('@/assets/fonts/NeueMontreal-Light.woff') format('woff');
+  font-weight: theme($fontWeights, 'light');
+  font-style: normal;
+}
+@font-face {
+  font-family: theme($fontFamilies, 'NeueMontreal');
+  src: url('@/assets/fonts/NeueMontreal-Regular.woff2') format('woff2'),
+    url('@/assets/fonts/NeueMontreal-Regular.woff') format('woff');
+  font-weight: theme($fontWeights, 'regular');
+  font-style: normal;
+}
+@font-face {
+  font-family: theme($fontFamilies, 'NeueMontreal');
+  src: url('@/assets/fonts/NeueMontreal-Medium.woff2') format('woff2'),
+    url('@/assets/fonts/NeueMontreal-Medium.woff') format('woff');
+  font-weight: theme($fontWeights, 'medium');
+  font-style: normal;
+}
+@font-face {
+  font-family: theme($fontFamilies, 'NeueMontreal');
+  src: url('@/assets/fonts/NeueMontreal-Bold.woff2') format('woff2'),
+    url('@/assets/fonts/NeueMontreal-Bold.woff') format('woff');
+  font-weight: theme($fontWeights, 'bold');
+  font-style: normal;
+}

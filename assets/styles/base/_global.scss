@@ -1,0 +1,111 @@
+html {
+  font-family: 'Aktiv Grotesk', sans-serif;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: initial;
+  overscroll-behavior: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  @extend %description-12;
+
+  width: 100%;
+  min-height: 100%;
+  color: theme($colors, 'black');
+  background: theme($colors, 'white');
+  text-rendering: optimizeLegibility;
+  user-select: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+a {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  border: none;
+  border-radius: none;
+  background: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+[data-split] {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.page-up-enter-active,
+.page-up-leave-active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  .foreground {
+    transition: opacity 0.8s theme($ease, 'in-out-sine');
+  }
+}
+.page-up-enter-active {
+  transition: transform 1.3s theme($ease, 'in-out-quart');
+}
+.page-up-leave-active {
+  transition: transform 1.3s theme($ease, 'in-out-quart');
+}
+.page-up-leave-from {
+  transform: translate(0, 0);
+}
+.page-up-leave-to {
+  transform: translate(0, -16%);
+
+  .foreground {
+    opacity: 1 !important;
+  }
+}
+.page-up-enter-from {
+  transform: translate(0, 100%);
+}
+.page-up-enter-to {
+  transform: translate(0, 0);
+}

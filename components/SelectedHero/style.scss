@@ -1,0 +1,55 @@
+@import '@/assets/styles/shared/page';
+@import '@/assets/styles/utils/theme';
+
+.selected_hero {
+  @extend %cover;
+  height: calc(100vh - theme($navHeight, 'desktop'));
+  pointer-events: none;
+
+  .list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+
+    .item {
+      position: relative;
+      pointer-events: all;
+      cursor: pointer;
+
+      &_media {
+        position: relative;
+        width: 6rem;
+        height: 7.5rem;
+        overflow: hidden;
+        background-color: lightcoral;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+
+  .media {
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    width: 48rem;
+    height: 60rem;
+    overflow: hidden;
+    pointer-events: all;
+    background-color: lightblue;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

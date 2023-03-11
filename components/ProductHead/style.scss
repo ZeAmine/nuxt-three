@@ -1,0 +1,27 @@
+@import '@/assets/styles/shared/grid';
+@import '@/assets/styles/shared/descriptions';
+
+.product_head {
+  position: relative;
+  width: 100%;
+  height: 14rem;
+  margin-top: 1.6rem;
+  pointer-events: none;
+
+  .wrapper {
+    @extend %base-grid;
+
+    position: relative;
+  }
+
+  .title {
+    grid-column: span 4;
+    pointer-events: all;
+
+    h1 {
+      @extend %description-12;
+
+      text-transform: uppercase;
+    }
+  }
+}

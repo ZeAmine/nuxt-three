@@ -1,0 +1,16 @@
+@import '../utils/theme';
+
+%description {
+  &-10 {
+    @include font-base(24, 10, 'NeueMontreal', 1.2, 0.2px);
+  }
+  &-12 {
+    @include font-base(24, 12, 'NeueMontreal', 1.2, 0.4px);
+  }
+  &-16 {
+    @include font-base(16, 16, 'NeueMontreal', 1.2);
+  }
+  &-24 {
+    @include font-base(24, 24, 'NeueMontreal', 1.2);
+  }
+}
